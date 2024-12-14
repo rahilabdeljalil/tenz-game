@@ -1,15 +1,13 @@
 {
   "name": "tenz-game",
-  "private": true,
+"private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://abdeljalilrahil.github.io/tenz-game", 
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "prebuild": "echo 'Running pre-build checks...'" 
+    "preview": "vite preview"
   },
   "dependencies": {
     "nanoid": "^5.0.9",
