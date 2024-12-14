@@ -7,3 +7,10 @@ directory = "netlify/functions"
 
 [build.environment]
 NODE_VERSION = "20.18.0"
+
+[headers]
+  [[headers.values]]
+  path = "/tenz-game/assets/*.js"
+  headers = [
+    "Content-Type: application/javascript"
+  ]
